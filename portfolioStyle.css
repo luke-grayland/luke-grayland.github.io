@@ -125,11 +125,27 @@ nav {
 	padding: 120px 200px 120px 150px;
 }
 
+.projectsDiv {
+	background-color: var(--greyBlue);
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.projectsImage {
+	height: auto;
+	width: 700px;
+}
+
+.projectsImageDiv {
+	margin: auto auto auto 20px;
+}
 
 
-
-
-
+.footer {
+	background-color: var(--brownRed);
+	height: 50px;
+}
 
 
 
