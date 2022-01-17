@@ -1,9 +1,98 @@
+:root {
+	--darkBlue: #2b4554;
+	--cream: #eac5a7;
+	--greyBlue: #d9dee4;
+	--brownRed: #b9451e;
+}
+
 * {
 	box-sizing: border-box;
 	
 }
 
+
 html {
 	font-size: 62.5%;
+	font-family: 'Raleway', sans-serif;;
+
 }
+
+h1 {
+	font-size: 6rem;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navBar {
+	background-color: white;
+	position: fixed;
+	height: 80px;
+	width: 100%;	
+}
+
+.navList {
+	width: 40%;
+	margin: auto 20px auto 0px;
+	font-size: 2rem;
+	color: var(--darkBlue);
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.navList :link {
+	color: var(--darkBlue);
+	text-decoration: none;
+	
+}
+
+.navList :visited {
+	color: var(--darkBlue);
+}
+
+.navList :hover {
+	color: var(--greyBlue);
+}
+
+.header {
+	height: 800px;
+	background-color: var(--cream);
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.headerTextDiv {
+	margin: auto auto;
+	color: white;
+	
+}
+
+.headerImageDiv {
+	background-image: url("Images/headerImage1.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
