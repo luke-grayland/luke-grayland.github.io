@@ -163,14 +163,46 @@ nav {
 }
 
 
+.contactDiv {
+	height: 800px;
+	background-color: var(--darkBlue);
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+		
+}
+
+.contactImageDiv {
+		margin: auto auto;
+}
+
+.contactImage {
+	height: auto;
+	width: 300px;
+}
+
+.contactContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	
+}
+
+.contactIconsDiv {
+	display: flex;
+	justify-content: space-around;
+}
+
 .footer {
-	background-color: var(--brownRed);
+	background-color: white;
 	height: 80px;
 }
 
 
-
-
+.icon {
+	font-size: 100px;
+	color: white;
+}
 
 
 
