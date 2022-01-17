@@ -60,7 +60,7 @@ nav {
 }
 
 .navList :hover {
-	color: var(--greyBlue);
+	color: var(--cream);
 }
 
 .header {
@@ -117,7 +117,6 @@ nav {
 
 .projectsDiv {
 	background-color: var(--greyBlue);
-	height: 1000px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 }
@@ -130,6 +129,39 @@ nav {
 .projectsImageDiv {
 	margin: auto auto auto 20px;
 }
+
+.projectsContent{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 20px;
+
+}
+
+.projectsTemplate {
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: white solid;
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: 5fr 1fr;	
+}
+
+.projectsTemplate .whiteArrow {
+	height: auto;
+	width: 100px;
+	margin: auto auto;
+	padding: 10px 10px;
+}
+
+.projectsTextBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 
 .footer {
 	background-color: var(--brownRed);
