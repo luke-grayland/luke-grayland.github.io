@@ -18,11 +18,15 @@ html {
 }
 
 h1 {
-	font-size: 6rem;
+	font-size: 7rem;
 }
 
 h2 {
 	font-size: 4rem;
+}
+
+p {
+	font-size: 2rem;
 }
 
 
@@ -35,7 +39,8 @@ nav {
 	background-color: white;
 	position: fixed;
 	height: 80px;
-	width: 100%;	
+	width: 100%;
+	z-index: 10;	
 }
 
 .navList {
@@ -67,20 +72,58 @@ nav {
 	background-color: var(--cream);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+
 }
 
 .headerTextDiv {
 	margin: auto auto;
 	color: white;
+	border: white solid;
+	padding: 0px 120px;
+	text-align: center;
 	
 }
 
 .headerImageDiv {
-	background-image: url("Images/headerImage1.png");
+
+	position: relative;
+	top: 100px;
+	z-index: 5;
+
 }
 
+.headerImage {
+	height: auto;
+	width: 700px;
 
+}
 
+.aboutMeDiv {
+	background-color: var(--darkBlue); 
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.dividerDiv {
+	height: 100px;
+	background-color: white;
+}
+
+.aboutMeImage {
+	height: auto;
+	width: 500px;
+
+}
+
+.aboutMeImageDiv {
+	margin: auto auto;
+	
+}
+
+.aboutMeContent {
+	color: white;
+	padding: 120px 200px 120px 150px;
+}
 
 
 
