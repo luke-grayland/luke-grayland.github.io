@@ -6,15 +6,12 @@
 }
 
 * {
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
-
 
 html {
 	font-size: 62.5%;
 	font-family: 'Raleway', sans-serif;;
-
 }
 
 h1 {
@@ -56,7 +53,6 @@ nav {
 .navList :link {
 	color: var(--darkBlue);
 	text-decoration: none;
-	
 }
 
 .navList :visited {
@@ -72,7 +68,6 @@ nav {
 	background-color: var(--cream);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-
 }
 
 .headerTextDiv {
@@ -81,7 +76,6 @@ nav {
 	border: white solid;
 	padding: 0px 120px;
 	text-align: center;
-	
 }
 
 .headerImageDiv {
@@ -89,13 +83,11 @@ nav {
 	position: relative;
 	top: 100px;
 	z-index: 5;
-
 }
 
 .headerImage {
 	height: auto;
 	width: 700px;
-
 }
 
 .aboutMeDiv {
@@ -112,12 +104,10 @@ nav {
 .aboutMeImage {
 	height: auto;
 	width: 500px;
-
 }
 
 .aboutMeImageDiv {
-	margin: auto auto;
-	
+	margin: auto;
 }
 
 .aboutMeContent {
@@ -141,11 +131,9 @@ nav {
 	margin: auto auto auto 20px;
 }
 
-
 .footer {
 	background-color: var(--brownRed);
 	height: 80px;
-
 }
 
 
