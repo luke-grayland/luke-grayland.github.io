@@ -22,6 +22,10 @@ h2 {
 	font-size: 4rem;
 }
 
+h3 {
+	font-size: 1.5rem;
+}
+
 p {
 	font-size: 2rem;
 }
@@ -29,7 +33,12 @@ p {
 
 nav {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+}
+
+.navBar h2 {
+	color: var(--darkBlue);
+	margin: auto 0px auto 150px;
 }
 
 .navBar {
@@ -40,27 +49,42 @@ nav {
 	z-index: 10;	
 }
 
+.navListDiv {
+	margin: auto 0px;
+	display: flex;
+	justify-content: flex-end;
+}
+
 .navList {
-	width: 40%;
-	margin: auto 20px auto 0px;
+
+	margin: auto 50px auto 0px;
 	font-size: 2rem;
 	color: var(--darkBlue);
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	list-style-type: none;
+
+}
+
+.navList li {
+	margin-right: 30px;
+	margin-left: 30px;
 }
 
 .navList :link {
 	color: var(--darkBlue);
 	text-decoration: none;
+	transition: 0.25s;
 }
 
 .navList :visited {
 	color: var(--darkBlue);
+	transition: 0.25s;
 }
 
 .navList :hover {
 	color: var(--cream);
+	transition: 0.2s;
 }
 
 .header {
@@ -94,6 +118,7 @@ nav {
 	background-color: var(--darkBlue); 
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+
 }
 
 .dividerDiv {
@@ -136,6 +161,7 @@ nav {
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 20px 20px;
+	margin-right: 50px;
 
 }
 
@@ -154,17 +180,29 @@ nav {
 	width: 100px;
 	margin: auto auto;
 	padding: 10px 10px;
+	transition: 0.3s;
+	cursor: pointer;
 }
+
+.projectsTemplate .whiteArrow:hover {
+	height: auto;
+	width: 120px;
+	margin: auto auto;
+	padding: 10px 10px;
+	transition: 0.3s;
+}
+
 
 .projectsTextBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	
 }
 
 
 .contactDiv {
-	height: 800px;
+
 	background-color: var(--darkBlue);
 	display: grid;
 	grid-template-columns: 2fr 1fr;
@@ -173,11 +211,16 @@ nav {
 
 .contactImageDiv {
 		margin: auto auto;
+		cursor: pointer;
+		margin-right: 50px;
 }
 
 .contactImage {
 	height: auto;
 	width: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
 }
 
 .contactContent {
@@ -185,23 +228,34 @@ nav {
 	flex-direction: column;
 	justify-content: space-between;
 	color: white;
+	margin-left: 150px;
 	
 }
 
 .contactIconsDiv {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	margin-bottom: 50px;
+
 }
 
 .footer {
 	background-color: white;
-	height: 80px;
+	color: black;
+	margin: 20px 0px 20px 150px;
 }
+
 
 
 .icon {
 	font-size: 100px;
 	color: white;
+	transition: 0.15s;
+}
+
+.icon:hover {
+	color: var(--brownRed);
+	transition: 0.15s;
 }
 
 
