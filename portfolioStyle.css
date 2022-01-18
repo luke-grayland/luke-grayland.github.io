@@ -45,6 +45,7 @@ nav {
 
 	.navBar h2 {
 		margin: auto 0px auto 10%;
+		font-size: 3rem;
 	}
 
 	
@@ -127,11 +128,12 @@ nav {
 }
 
 .header {
-	height: 800px;
+
 	background-color: var(--cream);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas: "image content";
+	height: 800px;
 }
 
 .headerTextDiv {
@@ -143,8 +145,21 @@ nav {
 	grid-area: content;
 }
 
-.headerImageDiv {
+@media only screen and (max-width: 870px) {
+	.headerTextDiv {
+		padding: 0px 50px;
+	}
+	
+}
 
+@media only screen and (max-width: 600px) {
+	.headerTextDiv {
+		padding: 0px 20px 0px 20px;
+	}
+	
+}
+
+.headerImageDiv {
 	position: relative;
 	top: 100px;
 	z-index: 5;
@@ -154,23 +169,57 @@ nav {
 .headerImage {
 	height: auto;
 	width: 700px;
+	
 }
 
 @media only screen and (max-width: 1550px) {
-	.header {
-		grid-template-areas: "content image";
+		.header {
+		grid-template-areas: "content" "image";
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 2fr;
+		height: auto;
+	}
+	
+	.headerImageDiv {
+		position: static;
+		margin: auto;
+	}
+	
+	.headerImage {
+		width: 600px;
+	}
+	
+	.headerTextDiv {
+		margin-top: 100px;
 	}
 }
+
+@media only screen and (max-width: 870px) {
+	.headerImage {
+			width: 500px;
+		}
+	}
+
+
 
 .aboutMeDiv {
 	background-color: var(--darkBlue); 
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+	grid-template-areas: "content image";
 
 }
 
+@media only screen and (max-width: 870px) {
+	.aboutMeDiv {
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr;
+		grid-template-areas: "content" "image";
+	}
+}
+
 .dividerDiv {
-	height: 100px;
+	height: 80px;
 	background-color: white;
 }
 
@@ -179,30 +228,92 @@ nav {
 	width: 500px;
 }
 
+@media only screen and (max-width: 1200px) {
+	.aboutMeImage {
+		width: 400px;
+	}
+}
+
+
 .headshotImage {
 	height: 300px;
 	width: 300px;
-	margin-right: 50vw;
+	margin-right: 50px;
 }
 
 .aboutMeImageDiv {
-	margin: auto;
+	margin: auto 20px;
+	grid-area: image;
 }
 
 .aboutMeContent {
 	color: white;
 	padding: 120px 200px 120px 150px;
+	grid-area: content;
 }
+
+@media only screen and (max-width: 1550px) {
+	.aboutMeContent {
+		padding: 60px 100px 60px 75px;
+	}
+	
+}
+
+@media only screen and (max-width: 870px) {
+	.aboutMeContent {
+		padding: 20px 20px;
+	}
+	.aboutMeContent h2 {
+		text-align: center;
+	}
+	.aboutMeImageDiv {
+		display: flex;
+		justify-content: center;
+	}
+	.aboutMeInnerContent {
+		display: flex;
+		justify-content: center;
+	}
+	.aboutMeInnerContent p {
+		margin: 10px 50px;
+	}
+	.headshotImage {
+		margin: 0px auto;
+	}
+	
+	
+}
+
 
 .aboutMeInnerContent {
 	display: flex;
 }
 
+@media only screen and (max-width: 1550px) {
+	.aboutMeInnerContent{
+		flex-direction: column;
+
+	}
+}
+
+
 .projectsDiv {
 	background-color: var(--greyBlue);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "image content content";
 }
+
+@media only screen and (max-width: 1100px) {
+	
+
+	.projectsDiv {
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr;
+		grid-template-areas: "content" "image";
+	}
+}
+
 
 .projectsImage {
 	height: auto;
@@ -210,12 +321,39 @@ nav {
 
 }
 
+@media only screen and (max-width: 1685px) {
+	.projectsImage {
+		width: 500px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.projectsImage {
+		width: 350px;
+		margin-bottom: 20px;
+	}
+}
+
+
+
 .projectsImageDiv {
 	margin: auto auto auto 20px;
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
+	grid-area: image;
 
+}
+
+@media only screen and (max-width: 1100px) {
+	.projectsImageDiv {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		margin: auto;
+
+	}
 }
 
 .projectsContent{
@@ -228,8 +366,21 @@ nav {
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 1;
+	grid-area: content;
 
 }
+
+@media only screen and (max-width: 1100px) {
+	.projectsContent {
+		margin-right: 0px;
+			
+	}
+}
+
+.ptIndented {
+	margin-left: 140px;
+}
+
 
 .projectsTemplate {
 
@@ -240,11 +391,20 @@ nav {
 	display: grid;
 	grid-template-columns: 5fr 1fr;	
 
+
 }
 
-.ptIndented {
-	margin-left: 120px;
+@media only screen and (max-width: 1100px) {
+	.projectsTemplate {
+		width: 100%;
+		margin: auto;
+	}
+	.ptIndented {
+		margin-left: 0px;
+	}
 }
+
+
 
 .projectsTemplate .whiteArrow {
 	height: auto;
@@ -280,9 +440,18 @@ nav {
 		
 }
 
+@media only screen and (max-width: 870px) {
+	.contactDiv {
+		grid-template-columns: 1fr;
+	}
+
+}
+
+
+
 .contactImageDiv {
 		margin: auto auto;
-		cursor: pointer;
+
 		margin-right: 50px;
 }
 
@@ -294,6 +463,13 @@ nav {
 
 }
 
+@media only screen and (max-width: 870px) {
+	.contactImage {
+		display: none;
+	}
+
+}
+
 .contactContent {
 	display: flex;
 	flex-direction: column;
@@ -302,6 +478,15 @@ nav {
 	margin-left: 150px;
 	
 }
+
+@media only screen and (max-width: 870px) {
+	.contactContent {
+		margin-left: 0px;
+		padding: 10px 30px;
+	}
+}
+
+
 
 .contactIconsDiv {
 	display: flex;
@@ -322,6 +507,7 @@ nav {
 	font-size: 100px;
 	color: white;
 	transition: 0.15s;
+	margin: 10px 10px;
 }
 
 .icon:hover {
