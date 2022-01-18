@@ -98,7 +98,7 @@ nav {
 	margin: auto auto;
 	color: white;
 	border: white solid;
-	padding: 0px 120px;
+	padding: 0px 200px;
 	text-align: center;
 }
 
@@ -131,6 +131,12 @@ nav {
 	width: 500px;
 }
 
+.headshotImage {
+	height: 300px;
+	width: 300px;
+	margin-right: 50px;
+}
+
 .aboutMeImageDiv {
 	margin: auto;
 }
@@ -140,19 +146,28 @@ nav {
 	padding: 120px 200px 120px 150px;
 }
 
+.aboutMeInnerContent {
+	display: flex;
+}
+
 .projectsDiv {
 	background-color: var(--greyBlue);
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
 .projectsImage {
 	height: auto;
 	width: 700px;
+
 }
 
 .projectsImageDiv {
 	margin: auto auto auto 20px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+
 }
 
 .projectsContent{
@@ -162,6 +177,9 @@ nav {
 	justify-content: space-between;
 	padding: 20px 20px;
 	margin-right: 50px;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
 
 }
 
@@ -173,6 +191,11 @@ nav {
 	padding-left: 10px;
 	display: grid;
 	grid-template-columns: 5fr 1fr;	
+
+}
+
+.ptIndented {
+	margin-left: 120px;
 }
 
 .projectsTemplate .whiteArrow {
