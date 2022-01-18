@@ -41,6 +41,15 @@ nav {
 	margin: auto 0px auto 150px;
 }
 
+@media only screen and (max-width: 1050px) {
+
+	.navBar h2 {
+		margin: auto 0px auto 10%;
+	}
+
+	
+}
+
 .navBar {
 	background-color: white;
 	position: fixed;
@@ -53,6 +62,36 @@ nav {
 	margin: auto 0px;
 	display: flex;
 	justify-content: flex-end;
+
+}
+
+.menuIcon {
+	display: none;
+	font-size: 40px;
+	margin: auto 30px;
+	transition: 0.2s;
+}
+
+.menuIcon:hover {
+	display: none;
+	font-size: 45px;
+	margin: auto 30px;
+	transition: 0.2s;
+}
+
+@media only screen and (max-width: 1050px) {
+	
+	.navList li {
+		display: none;
+	}
+	
+	.menuIcon {
+		display: block;
+	}	
+	
+	.menuIcon:hover {
+		display: block;
+	}
 }
 
 .navList {
@@ -92,6 +131,7 @@ nav {
 	background-color: var(--cream);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	grid-template-areas: "image content";
 }
 
 .headerTextDiv {
@@ -100,6 +140,7 @@ nav {
 	border: white solid;
 	padding: 0px 200px;
 	text-align: center;
+	grid-area: content;
 }
 
 .headerImageDiv {
@@ -107,11 +148,18 @@ nav {
 	position: relative;
 	top: 100px;
 	z-index: 5;
+	grid-area: image;
 }
 
 .headerImage {
 	height: auto;
 	width: 700px;
+}
+
+@media only screen and (max-width: 1550px) {
+	.header {
+		grid-template-areas: "content image";
+	}
 }
 
 .aboutMeDiv {
@@ -134,7 +182,7 @@ nav {
 .headshotImage {
 	height: 300px;
 	width: 300px;
-	margin-right: 50px;
+	margin-right: 50vw;
 }
 
 .aboutMeImageDiv {
