@@ -33,27 +33,24 @@ p {
 nav {
 	display: flex;
 	justify-content: space-between;
+	background-color: white;
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	z-index: 10;
 }
 
-.navBar h2 {
+nav h2 {
 	color: var(--darkBlue);
 	margin: auto 0px auto 150px;
 }
 
 @media only screen and (max-width: 1050px) {
 
-	.navBar h2 {
+	nav h2 {
 		margin: auto 0px auto 10%;
 		font-size: 3rem;
 	}
-}
-
-.navBar {
-	background-color: white;
-	position: fixed;
-	height: 80px;
-	width: 100%;
-	z-index: 10;	
 }
 
 .navListDiv {
@@ -121,7 +118,7 @@ nav {
 	transition: 0.2s;
 }
 
-.header {
+header {
 	background-color: var(--cream);
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -199,7 +196,7 @@ nav {
 }
 
 @media only screen and (max-width: 870px) {
-		.header {
+		header {
 		grid-template-areas: "content" "image";
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 2fr;
