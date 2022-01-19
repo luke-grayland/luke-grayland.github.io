@@ -305,8 +305,12 @@ nav {
 
 .aboutMeContent {
 	color: white;
-	padding: 120px 200px 120px 205px;
+	padding: 120px 110px 120px 205px;
 	grid-area: content;
+}
+
+.aboutMeContent h2 {
+	margin-left: 55px;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -315,6 +319,7 @@ nav {
 	}
 	.aboutMeContent h2 {
 		text-align: center;
+		margin-left: 0px;
 	}
 	
 }
@@ -360,10 +365,18 @@ nav {
 	}
 	.aboutMeInnerContent p {
 		margin: 20px 100px;
+		text-align: center;
 
 	}
 	.headshotImage {
 		margin: auto auto;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	
+	.aboutMeInnerContent p {
+		margin: 20px 0px;
 	}
 }
 
@@ -497,6 +510,14 @@ nav {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.projectsTemplate {
+
+		margin: 15px auto;
+	}
+	
+}
+
 
 
 .projectsTemplate .whiteArrow {
@@ -550,7 +571,7 @@ nav {
 
 .contactImage {
 	height: auto;
-	width: 300px;
+	width: 200px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 
@@ -595,7 +616,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 870px) {
 	.footer {
 		margin: 20px 0px 20px 40px;
 	}
