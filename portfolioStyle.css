@@ -67,10 +67,7 @@ nav h2 {
 }
 
 .menuIcon:hover {
-	display: none;
 	font-size: 45px;
-	margin: auto 30px;
-	transition: 0.2s;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -583,7 +580,14 @@ header {
 	transition: 0.15s;
 }
 
+@keyframes fadeInAnimation {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 
+.fadeIn {
+	animation: fadeInAnimation 2s;
+}
 
 
 
