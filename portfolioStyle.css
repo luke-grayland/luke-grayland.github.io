@@ -490,6 +490,11 @@ nav {
 	transition: 0.3s;
 }
 
+.arrowLink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 .projectsTextBox {
 	display: flex;
