@@ -239,6 +239,11 @@ nav {
 		}
 	}
 
+@media only screen and (max-width: 520px) {
+	.headerImage {
+			width: 370px;
+		}
+	}
 
 
 .aboutMeDiv {
@@ -257,6 +262,13 @@ nav {
 	}
 }
 
+@media only screen and (max-width: 500px) {
+	.aboutMeDiv {
+		grid-template-rows: 3fr 1fr;
+
+	}
+}
+
 .dividerDiv {
 	height: 80px;
 	background-color: white;
@@ -270,6 +282,12 @@ nav {
 @media only screen and (max-width: 1200px) {
 	.aboutMeImage {
 		width: 400px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.aboutMeImage {
+		width: 300px;
 	}
 }
 
@@ -294,6 +312,9 @@ nav {
 @media only screen and (max-width: 1550px) {
 	.aboutMeContent {
 		padding: 60px 100px 60px 75px;
+	}
+	.aboutMeContent h2 {
+		text-align: center;
 	}
 	
 }
@@ -337,6 +358,20 @@ nav {
 		flex-direction: column;
 
 	}
+	.aboutMeInnerContent p {
+		margin: 20px 100px;
+
+	}
+	.headshotImage {
+		margin: auto auto;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.aboutMeInnerContent p {
+		margin: 20px 30px;
+	}
 }
 
 
@@ -344,7 +379,7 @@ nav {
 	background-color: var(--greyBlue);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: "image content content";
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -353,7 +388,7 @@ nav {
 	.projectsDiv {
 		grid-template-columns: 1fr;
 		grid-template-rows: 2fr 1fr;
-		grid-template-areas: "content" "image";
+
 	}
 }
 
@@ -361,7 +396,7 @@ nav {
 .projectsImage {
 	height: auto;
 	width: 700px;
-
+	
 }
 
 @media only screen and (max-width: 1685px) {
@@ -385,8 +420,19 @@ nav {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
-	grid-area: image;
 
+
+}
+
+@media only screen and (max-width: 1100px) {
+	
+
+	.projectsImageDiv {
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: 2;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
@@ -409,13 +455,17 @@ nav {
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 1;
-	grid-area: content;
+
 
 }
 
 @media only screen and (max-width: 1100px) {
 	.projectsContent {
 		margin-right: 0px;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
 			
 	}
 }
@@ -545,12 +595,27 @@ nav {
 }
 
 
+@media only screen and (max-width: 400px) {
+	.footer {
+		margin: 20px 0px 20px 40px;
+	}
+	
+}
 
 .icon {
 	font-size: 100px;
 	color: white;
 	transition: 0.15s;
 	margin: 10px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+	.icon {
+		font-size: 60px;
+	}
+	.contactContent {
+		text-align: center;
+	}
 }
 
 .icon:hover {
