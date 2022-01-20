@@ -53,6 +53,14 @@ nav h2 {
 	}
 }
 
+@media only screen and (max-width: 375px) {
+
+	nav h2 {
+		margin: auto 0px auto 10%;
+		font-size: 2rem;
+	}
+}
+
 .navListDiv {
 	margin: auto 0px;
 	display: flex;
@@ -124,7 +132,7 @@ header {
 }
 
 .headerTextDiv {
-	margin: auto auto;
+	margin: auto 5% auto auto;
 	color: white;
 	border: white solid;
 	padding: 0px 200px;
@@ -164,7 +172,7 @@ header {
 	.headerTextDiv {
 		padding: 0px 50px;
 		position: static;
-		margin: auto;
+		margin: auto 5% auto 5%;
 	}
 }
 
@@ -196,7 +204,7 @@ header {
 		header {
 		grid-template-areas: "content" "image";
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2fr;
+		grid-template-rows: 1fr 1fr;
 		height: auto;
 	}
 	
@@ -225,6 +233,12 @@ header {
 			width: 370px;
 		}
 	}
+	
+@media only screen and (max-width: 375px) {
+	.headerImage {
+			width: 280px;
+		}
+	}	
 
 .aboutMeDiv {
 	background-color: var(--darkBlue); 
@@ -269,10 +283,23 @@ header {
 	}
 }
 
+@media only screen and (max-width: 375px) {
+	.aboutMeImage {
+		width: 200px;
+	}
+}
+
 .headshotImage {
 	height: 300px;
 	width: 300px;
 	margin-right: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+	.headshotImage {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 .aboutMeImageDiv {
@@ -358,6 +385,23 @@ header {
 	}
 }
 
+.linkToExternal {
+	transition: 0.15s;
+}
+
+.linkToExternal:link {
+	color: white;
+}
+
+.linkToExternal:visited {
+	color: white;
+}
+
+.linkToExternal:hover {
+	color: var(--brownRed);
+	transition: 0.15s;
+}
+
 
 .projectsDiv {
 	background-color: var(--greyBlue);
@@ -389,6 +433,16 @@ header {
 	.projectsImage {
 		width: 350px;
 		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.projectsImage {
+		width: 250px;
+		margin-bottom: 20px;
+	}
+	.projectsDiv {
+		grid-template-rows: 3fr 1fr;
 	}
 }
 
@@ -569,6 +623,15 @@ header {
 @media only screen and (max-width: 500px) {
 	.icon {
 		font-size: 60px;
+	}
+	.contactContent {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.icon {
+		font-size: 40px;
 	}
 	.contactContent {
 		text-align: center;
