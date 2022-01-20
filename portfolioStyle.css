@@ -204,7 +204,7 @@ header {
 		header {
 		grid-template-areas: "content" "image";
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
+		grid-template-rows: 1fr 2fr;
 		height: auto;
 	}
 	
@@ -237,6 +237,9 @@ header {
 @media only screen and (max-width: 375px) {
 	.headerImage {
 			width: 280px;
+		}
+		header {
+			grid-template-rows: 1fr 1fr;
 		}
 	}	
 
@@ -286,6 +289,9 @@ header {
 @media only screen and (max-width: 375px) {
 	.aboutMeImage {
 		width: 200px;
+	}
+	.aboutMeDiv {
+		grid-template-rows: 4fr 1fr;
 	}
 }
 
