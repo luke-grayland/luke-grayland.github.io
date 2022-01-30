@@ -18,4 +18,4 @@ bin-release/
 # information for Eclipse / Flash Build
 
 .DS_Store
-
+.idea/
