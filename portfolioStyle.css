@@ -463,7 +463,7 @@ header {
 		transition: 0.15s;
 	}
 
-
+}
 	.projectsDiv {
 		background-color: var(--greyBlue);
 		display: grid;
