@@ -429,6 +429,8 @@ header {
 
 	.headshotImage {
 		margin: auto;
+		width: 300px;
+		height: 300px;
 	}
 
 	.aboutMeContent h2 {
