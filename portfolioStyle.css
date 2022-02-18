@@ -72,11 +72,17 @@ nav h2 {
 	font-size: 40px;
 	margin: auto 30px;
 	transition: 0.2s;
+	z-index: 10;
 }
 
-.menuIcon:hover {
-	font-size: 45px;
+.menuIcon i {
+	color: var(--darkBlue);
 }
+
+.menuIcon i:hover {
+	color: var(--brownRed);
+}
+
 
 @media only screen and (max-width: 1050px) {
 	
@@ -132,6 +138,46 @@ header {
 
 }
 
+.expandedMenu {
+	background-color: white;
+	height: 40vh;
+	width: 40vw;
+	display: none;
+	position: fixed;
+
+}
+
+.visible {
+	display: block;
+}
+
+.hamburgerList {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	font-size: 2rem;
+	color: var(--darkBlue);
+	font-size: 3rem;
+	list-style-type: none;
+	height: 100%;
+	margin-left: 5px;
+}
+
+.hamburgerList a:link {
+	text-decoration: none;
+	color: var(--darkBlue);
+}
+
+.hamburgerList a:visited {
+	text-decoration: none;
+	color: var(--darkBlue);
+}
+
+.hamburgerList a:hover {
+	text-decoration: none;
+	color: var(--brownRed);
+}
+
 .headerTextDiv {
 	margin: auto 5% auto auto;
 	color: white;
@@ -139,9 +185,7 @@ header {
 	padding: 0px 200px;
 	text-align: center;
 	grid-area: content;
-
 }
-
 
 @media only screen and (max-width: 1550px) {
 	.headerTextDiv {
@@ -424,7 +468,6 @@ header {
 
 }
 
-
 @media only screen and (max-width: 650px) {
 
 	.headshotImage {
@@ -446,23 +489,6 @@ header {
 
 	.headshotImage {
 		margin: auto;
-	}
-
-	.linkToExternal {
-		transition: 0.15s;
-	}
-
-	.linkToExternal:link {
-		color: white;
-	}
-
-	.linkToExternal:visited {
-		color: white;
-	}
-
-	.linkToExternal:hover {
-		color: var(--brownRed);
-		transition: 0.15s;
 	}
 
 }
