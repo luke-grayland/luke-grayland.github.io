@@ -8,7 +8,8 @@ document.querySelectorAll('.hamburgerListItem').forEach((hamburgerMenuItem) => {
     })
 })
 
-$("#lukeHeadshot").velocity("fadeIn", { duration: 1500 })
-
-
-// Still need to remove expanded menu when screen width is over X pixels (i.e. hamburger menu icon dissappears)
+window.addEventListener('resize', (e) => {
+    if (window.innerWidth > 1170) {
+        document.getElementById('expandedMenu').classList.remove('visible')
+    }
+})
