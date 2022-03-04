@@ -5,6 +5,7 @@
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
+  font-weight: 200;
 }
 
 h1 {
@@ -23,6 +24,16 @@ p {
   font-size: 2rem;
 }
 
+.subtext {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 650px) {
+  .subtext {
+    display: none;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -299,7 +310,12 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .aboutMeImage {
-    width: 400px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .aboutMeImage {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -356,26 +372,17 @@ header {
   .headshotImage {
     width: 350px;
     height: 350px;
+    margin: auto;
   }
 }
-@media only screen and (max-width: 1280px) {
-  .aboutMeInnerContent p {
-    padding-left: 55px;
-  }
+.aboutMeInnerContent p {
+  text-align: center;
+  padding: 0 30px;
 }
-@media only screen and (max-width: 1235px) {
-  .aboutMeInnerContent p {
-    padding-left: 75px;
-  }
-}
-@media only screen and (max-width: 1120px) {
-  .aboutMeInnerContent p {
-    padding-left: 130px;
-  }
-}
+
 @media only screen and (max-width: 870px) {
   .aboutMeContent {
-    padding: 20px 20px;
+    padding: 0 0;
   }
 
   .aboutMeContent h2 {
@@ -408,6 +415,7 @@ header {
 .aboutMeInnerContent p {
   margin: auto;
   font-size: 2.2rem;
+  padding: 0;
 }
 
 @media only screen and (max-width: 1550px) {
@@ -418,7 +426,9 @@ header {
 
   .aboutMeInnerContent p {
     margin: 20px 0px;
+    margin-left: 140px;
     text-align: center;
+    width: 350px;
   }
 
   .headshotImage {
@@ -427,12 +437,21 @@ header {
 }
 @media only screen and (max-width: 1100px) {
   .aboutMeInnerContent p {
-    margin: 20px 0px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .aboutMeInnerContent p {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 870px) {
   .headshotImage {
     margin: auto;
+  }
+
+  .aboutMeContent p {
+    margin: 20px auto;
   }
 
   .aboutMeContent h2 {
@@ -454,7 +473,8 @@ header {
 }
 @media only screen and (max-width: 500px) {
   .aboutMeInnerContent p {
-    margin: 20px 30px;
+    margin: 20px auto;
+    font-size: 2rem;
   }
 
   .headshotImage {
@@ -593,6 +613,38 @@ header {
   grid-row-start: 1;
 }
 
+.projectSkills {
+  display: flex;
+}
+
+.skillTag {
+  border: solid white;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  .skillTag {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .skillTag {
+    display: none;
+  }
+}
+.skillTag .p {
+  margin: auto;
+}
+
 @media only screen and (max-width: 1100px) {
   .projectsContent {
     margin-right: 0px;
@@ -612,7 +664,7 @@ header {
   border: white solid;
   padding-left: 10px;
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -639,6 +691,11 @@ header {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 450px) {
+  .projectsTemplate .whiteArrow {
+    width: 70px;
+  }
+}
 .projectsTemplate .whiteArrow:hover {
   height: auto;
   width: 120px;
@@ -657,8 +714,14 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 50px;
 }
 
+@media only screen and (max-width: 650px) {
+  .projectsTextBox {
+    margin-left: 0;
+  }
+}
 .contactDiv {
   background-color: #2b4554;
   display: grid;
@@ -705,6 +768,21 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
+}
+
+.skillsIcon {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+}
+
+.skillsIcon:hover {
+  color: #2b4554;
+  transition: 0.15s;
+}
+
+.skillsIcon:link {
+  text-decoration: none;
 }
 
 .footer {
