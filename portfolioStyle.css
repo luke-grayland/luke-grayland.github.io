@@ -240,6 +240,7 @@ header {
     width: 680px;
   }
 }
+
 @media only screen and (max-width: 870px) {
   header {
     grid-template-areas: "content" "image";
@@ -247,7 +248,7 @@ header {
     grid-template-rows: 1fr 2fr;
     height: auto;
   }
-
+  
   .headerImageDiv {
     position: static;
     margin: auto;
