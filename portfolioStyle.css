@@ -248,7 +248,7 @@ header {
     grid-template-rows: 1fr 2fr;
     height: auto;
   }
-  
+
   .headerImageDiv {
     position: static;
     margin: auto;
