@@ -30,7 +30,7 @@ p {
   font-style: italic;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .subtext {
     display: none;
   }
@@ -84,7 +84,7 @@ nav h2 {
   color: #b9451e;
 }
 
-@media only screen and (max-width: 1170px) {
+@media only screen and (max-width: 1180px) {
   .navList li {
     display: none;
   }
@@ -240,6 +240,7 @@ header {
     width: 680px;
   }
 }
+
 @media only screen and (max-width: 870px) {
   header {
     grid-template-areas: "content" "image";
@@ -261,6 +262,14 @@ header {
     margin-top: 100px;
   }
 }
+
+
+@media only screen and (max-width: 1150px) {
+  .headerImage {
+    width: 550px;
+  }
+}
+
 @media only screen and (max-width: 870px) {
   .headerImage {
     width: 500px;
@@ -287,6 +296,7 @@ header {
   grid-template-areas: "content image";
 }
 
+
 @media only screen and (max-width: 870px) {
   .aboutMeDiv {
     grid-template-columns: 1fr;
@@ -311,7 +321,7 @@ header {
 
 @media only screen and (max-width: 1200px) {
   .aboutMeImage {
-    width: 200px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 870px) {
@@ -341,8 +351,8 @@ header {
 
 @media only screen and (max-width: 375px) {
   .headshotImage {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 }
 .aboutMeImageDiv {
@@ -460,7 +470,7 @@ header {
     text-align: center;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .headshotImage {
     margin: auto;
     width: 300px;
@@ -480,6 +490,8 @@ header {
 
   .headshotImage {
     margin: auto;
+    height: 200px;
+    width: 200px;
   }
 }
 .skills {
@@ -547,7 +559,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
   .projectsDiv {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
@@ -587,7 +599,7 @@ header {
   grid-row-start: 1;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
   .projectsImageDiv {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -595,7 +607,7 @@ header {
     grid-row-end: 2;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
   .projectsImageDiv {
     width: 100%;
     display: flex;
@@ -630,7 +642,7 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .skillTag {
     font-size: 1rem;
     margin: 5px;
@@ -646,7 +658,7 @@ header {
   margin: auto;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
   .projectsContent {
     margin-right: 0px;
     grid-column-start: 1;
@@ -665,10 +677,10 @@ header {
   border: white solid;
   padding-left: 10px;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
   .projectsTemplate {
     width: 100%;
     margin: auto;
@@ -682,33 +694,80 @@ header {
   .projectsTemplate {
     margin: 15px auto;
   }
+
+  .projectsTemplate {
+    grid-template-columns: 3fr 1fr 1fr;
+  }
 }
 .projectsTemplate .whiteArrow {
   height: auto;
-  width: 100px;
+  width: 170px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 450px) {
-  .projectsTemplate .whiteArrow {
-    width: 70px;
-  }
-}
+
 .projectsTemplate .whiteArrow:hover {
   height: auto;
-  width: 120px;
+  width: 190px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
 }
 
+.liveTag {
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 650px) {
+  .liveTag {
+    min-width: 100px;
+  }
+
+  .projectsTemplate {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+
+  .projectsTemplate .whiteArrow {
+    width: 140px;
+  }
+
+  .projectsTemplate .whiteArrow:hover {
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectsTemplate .whiteArrow {
+    width: 120px;
+  }
+
+  .projectsTemplate .whiteArrow:hover {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projectsTemplate .whiteArrow {
+    width: 100px;
+  }
+
+  .projectsTemplate .whiteArrow:hover {
+    width: 90px;
+  }
+}
+
+
 .arrowLink {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .projectsTextBox {
@@ -718,11 +777,26 @@ header {
   margin-left: 50px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 750px) {
   .projectsTextBox {
     margin-left: 0;
   }
 }
+
+@media only screen and (max-width: 420px) {
+  .projectsTextBox {
+    margin-left: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
 .contactDiv {
   background-color: #2b4554;
   display: grid;
@@ -784,6 +858,12 @@ header {
 
 .skillsIcon:link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .skillsIcon {
+    font-size: 4rem;
+  }
 }
 
 .footer {
