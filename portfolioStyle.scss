@@ -11,6 +11,7 @@ html {
 	font-size: 62.5%;
 	font-family: 'Raleway', sans-serif;;
 	font-weight: 200;
+	scroll-behavior: smooth;
 }
 
 h1 {
@@ -204,8 +205,8 @@ header {
 
 .headerTextDiv {
 	margin: auto 5% auto auto;
-	color: white;
-	border: white solid;
+	color: $darkBlue;
+	border: solid white;
 	padding: 0px 200px;
 	text-align: center;
 	grid-area: content;
@@ -214,6 +215,9 @@ header {
 @media only screen and (max-width: 1550px) {
 	.headerTextDiv {
 		padding: 0px 125px;
+	}
+	.aboutMeContent h2 {
+		text-align: center;
 	}
 }
 
@@ -318,6 +322,7 @@ header {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	grid-template-areas: "content image";
+	padding-top: 20px;
 }
 
 @media only screen and (max-width: 870px) {
@@ -330,7 +335,7 @@ header {
 
 @media only screen and (max-width: 500px) {
 	.aboutMeDiv {
-		grid-template-rows: 3fr 1fr;
+		grid-template-rows: 2fr 1fr;
 	}
 }
 
@@ -384,6 +389,11 @@ header {
 	}
 }
 
+.aboutMeInnerContent p {
+	text-align: left;
+	padding: 0 30px;
+}
+
 .aboutMeImageDiv {
 	margin: auto 20px;
 	grid-area: image;
@@ -395,17 +405,9 @@ header {
 	grid-area: content;
 }
 
-.aboutMeContent h2 {
-	text-align: left;
-	padding-left: 75px;
-}
-
 @media only screen and (max-width: 1550px) {
 	.aboutMeContent {
 		padding: 60px 100px 60px 55px;
-	}
-	.aboutMeContent h2 {
-		padding-left: 225px;
 	}
 
 	.headshotImage {
@@ -414,9 +416,18 @@ header {
 		margin: auto;
 	}
 }
-.aboutMeInnerContent p {
-	text-align: center;
-	padding: 0 30px;
+
+
+
+.aboutMeInnerContent h2 {
+	text-align: left;
+	font-size: 5rem;
+}
+
+@media only screen and (max-width: 1550px)  {
+	.aboutMeInnerContent h2 {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 870px) {
@@ -425,9 +436,6 @@ header {
 		padding: 0 0;
 	}
 
-	.aboutMeContent h2 {
-		padding-left: 225px;
-	}
 	.aboutMeImageDiv {
 		display: flex;
 		justify-content: center;
@@ -436,7 +444,7 @@ header {
 		display: flex;
 		justify-content: center;
 	}
-	.aboutMeInnerContent p {
+	.aboutMeInnerContent p, h2 {
 		margin: 10px 50px;
 		padding: 0px 20px;
 
@@ -463,7 +471,8 @@ header {
 		flex-direction: column;
 	}
 
-	.aboutMeInnerContent p {
+
+	.aboutMeInnerContent p, .aboutMeH2 {
 		margin: 20px 0px;
 		margin-left: 140px;
 		text-align: center;
@@ -500,13 +509,8 @@ header {
 		margin: auto;
 	}
 
-	.aboutMeContent p {
+	.aboutMeContent p, .aboutMeH2 {
 		margin: 20px auto;
-	}
-
-	.aboutMeContent h2 {
-		padding-left: 0px;
-		text-align: center;
 	}
 
 }
@@ -519,10 +523,6 @@ header {
 		height: 300px;
 	}
 
-	.aboutMeContent h2 {
-		padding-left: 0px;
-		text-align: center;
-	}
 }
 
 @media only screen and (max-width: 500px) {
@@ -535,6 +535,7 @@ header {
 		margin: auto;
 	}
 }
+
 
 .skills {
 	background-color: $cream;
@@ -834,6 +835,10 @@ header {
 		justify-content: space-around;
 		color: white;
 		margin-left: 150px;
+
+		h2 {
+			font-size: 5rem;
+		}
 	}
 
 	@media only screen and (max-width: 870px) {
