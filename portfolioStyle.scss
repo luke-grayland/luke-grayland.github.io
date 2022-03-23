@@ -203,6 +203,18 @@ header {
 	color: $brownRed;
 }
 
+@media only screen and (max-width: 550px){
+	.hamburgerList {
+		padding-left: 10px;
+		padding-top: 30px;
+	}
+
+	li {
+		font-size: 2.5rem;
+
+	}
+}
+
 .headerTextDiv {
 	margin: auto 5% auto auto;
 	color: $darkBlue;
@@ -378,7 +390,7 @@ header {
 		width: 200px;
 	}
 	.aboutMeDiv {
-		grid-template-rows: 4fr 1fr;
+		grid-template-rows: 3fr 1fr;
 	}
 }
 
