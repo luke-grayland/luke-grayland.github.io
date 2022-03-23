@@ -178,6 +178,22 @@ header {
   color: #b9451e;
 }
 
+@media only screen and (max-width: 550px) {
+  .hamburgerList {
+    font-size: 2rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hamburgerList {
+    font-size: 2rem;
+    margin: auto;
+    padding-left: 20px;
+  }
+
+}
+
 .headerTextDiv {
   margin: auto 5% auto auto;
   color: white;
@@ -306,7 +322,7 @@ header {
 }
 @media only screen and (max-width: 500px) {
   .aboutMeDiv {
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
   }
 }
 .dividerDiv {
@@ -582,15 +598,26 @@ header {
     margin-bottom: 20px;
   }
 }
+
+@media only screen and (max-width: 450px){
+  .projectsDiv {
+    grid-template-rows: 3fr 2fr;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .projectsDiv {
+    grid-template-rows: 3fr 1fr;
+  }
+}
+
+
 @media only screen and (max-width: 375px) {
   .projectsImage {
     width: 250px;
     margin-bottom: 20px;
   }
 
-  .projectsDiv {
-    grid-template-rows: 3fr 1fr;
-  }
 }
 .projectsImageDiv {
   margin: auto auto auto 20px;
@@ -628,11 +655,12 @@ header {
 
 .projectSkills {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skillTag {
   border: solid white;
-  height: 40px;
+
   margin: 10px;
   padding: 10px;
   font-size: 1.5rem;
@@ -651,7 +679,9 @@ header {
 }
 @media only screen and (max-width: 450px) {
   .skillTag {
-    display: none;
+    font-size: 0.8rem;
+    margin: 5px;
+    padding: 3px;
   }
 }
 .skillTag .p {
@@ -667,6 +697,13 @@ header {
     grid-row-end: 1;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .projectsContent {
+    justify-content: normal;
+  }
+}
+
 .ptIndented {
   margin-left: 140px;
 }
@@ -762,6 +799,17 @@ header {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .projectsTemplate .whiteArrow {
+    width: 70px;
+
+  }
+
+  .projectsTemplate .whiteArrow:hover {
+    width: 80px;
+  }
+}
+
 
 .arrowLink {
   display: flex;
@@ -783,7 +831,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 450px) {
   .projectsTextBox {
     margin-left: 0;
   }
