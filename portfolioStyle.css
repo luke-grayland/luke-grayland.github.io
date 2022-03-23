@@ -265,6 +265,11 @@ header {
     margin-top: 100px;
   }
 }
+@media only screen and (max-width: 420px) {
+  header {
+    grid-template-rows: 1fr 1fr;
+  }
+}
 @media only screen and (max-width: 870px) {
   .headerImage {
     width: 500px;
@@ -344,12 +349,6 @@ header {
   margin-right: 50px;
 }
 
-@media only screen and (max-width: 375px) {
-  .headshotImage {
-    width: 200px;
-    height: 200px;
-  }
-}
 .aboutMeInnerContent p {
   text-align: left;
   padding: 0 30px;
@@ -402,7 +401,7 @@ header {
     justify-content: center;
   }
 
-  .aboutMeInnerContent p, h2 {
+  .aboutMeInnerContent p, aboutMeH2 {
     margin: 10px 50px;
     padding: 0px 20px;
   }
@@ -472,6 +471,8 @@ header {
 
   .headshotImage {
     margin: auto;
+    width: 200px;
+    height: 200px;
   }
 }
 .skills {
@@ -608,6 +609,7 @@ header {
 
 .projectSkills {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skillTag {
@@ -617,6 +619,7 @@ header {
   padding: 10px;
   font-size: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -627,11 +630,6 @@ header {
     font-size: 1rem;
     margin: 5px;
     padding: 5px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .skillTag {
-    display: none;
   }
 }
 .skillTag .p {
@@ -673,11 +671,16 @@ header {
 @media only screen and (max-width: 600px) {
   .projectsTemplate {
     margin: 15px auto;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 }
 .projectsTemplate .whiteArrow {
   height: auto;
-  width: 100px;
+  width: 130px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
@@ -691,7 +694,7 @@ header {
 }
 .projectsTemplate .whiteArrow:hover {
   height: auto;
-  width: 120px;
+  width: 145px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
@@ -708,6 +711,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 50px;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 650px) {

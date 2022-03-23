@@ -296,6 +296,12 @@ header {
 	}
 }
 
+@media only screen and (max-width: 420px) {
+	header {
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
 @media only screen and (max-width: 870px) {
 	.headerImage {
 			width: 500px;
@@ -382,13 +388,6 @@ header {
 	margin-right: 50px;
 }
 
-@media only screen and (max-width: 375px) {
-	.headshotImage {
-		width: 200px;
-		height: 200px;
-	}
-}
-
 .aboutMeInnerContent p {
 	text-align: left;
 	padding: 0 30px;
@@ -444,7 +443,7 @@ header {
 		display: flex;
 		justify-content: center;
 	}
-	.aboutMeInnerContent p, h2 {
+	.aboutMeInnerContent p, aboutMeH2 {
 		margin: 10px 50px;
 		padding: 0px 20px;
 
@@ -533,6 +532,8 @@ header {
 
 	.headshotImage {
 		margin: auto;
+		width: 200px;
+		height: 200px;
 	}
 }
 
@@ -605,329 +606,333 @@ header {
 
 	}
 
-	@media only screen and (max-width: 1100px) {
-		.projectsDiv {
-			grid-template-columns: 1fr;
-			grid-template-rows: 2fr 1fr;
-		}
+@media only screen and (max-width: 1100px) {
+	.projectsDiv {
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr 1fr;
 	}
+}
 
+.projectsImage {
+	height: auto;
+	width: 700px;
+}
+
+@media only screen and (max-width: 1685px) {
 	.projectsImage {
-		height: auto;
-		width: 700px;
+		width: 500px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.projectsImage {
+		width: 350px;
+		margin-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.projectsImage {
+		width: 250px;
+		margin-bottom: 20px;
 	}
 
-	@media only screen and (max-width: 1685px) {
-		.projectsImage {
-			width: 500px;
-			margin-bottom: 20px;
-		}
+	.projectsDiv {
+		grid-template-rows: 3fr 1fr;
 	}
+}
 
-	@media only screen and (max-width: 600px) {
-		.projectsImage {
-			width: 350px;
-			margin-bottom: 20px;
-		}
-	}
+.projectsImageDiv {
+	margin: auto auto auto 20px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+}
 
-	@media only screen and (max-width: 375px) {
-		.projectsImage {
-			width: 250px;
-			margin-bottom: 20px;
-		}
-
-		.projectsDiv {
-			grid-template-rows: 3fr 1fr;
-		}
-	}
-
+@media only screen and (max-width: 1100px) {
 	.projectsImageDiv {
-		margin: auto auto auto 20px;
 		grid-column-start: 1;
-		grid-column-end: 3;
-		grid-row-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 2;
+		grid-row-end: 2;
 	}
+}
 
-	@media only screen and (max-width: 1100px) {
-		.projectsImageDiv {
-			grid-column-start: 1;
-			grid-column-end: 1;
-			grid-row-start: 2;
-			grid-row-end: 2;
-		}
-	}
-
-	@media only screen and (max-width: 1100px) {
-		.projectsImageDiv {
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			margin: auto;
-		}
-	}
-
-	.projectsContent {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding: 20px 20px;
-		margin-right: 50px;
-		grid-column-start: 2;
-		grid-column-end: 4;
-		grid-row-start: 1;
-	}
-
-	.projectSkills {
-		display: flex;
-	}
-
-	.skillTag {
-		border: solid white;
-		height: 40px;
-		margin: 10px;
-		padding: 10px;
-		font-size: 1.5rem;
+@media only screen and (max-width: 1100px) {
+	.projectsImageDiv {
+		width: 100%;
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
-		text-align: center;
+		margin: auto;
 	}
+}
 
-	@media only screen and (max-width: 650px) {
-		.skillTag {
-			font-size: 1rem;
-			margin: 5px;
-			padding: 5px;
-		}
+.projectsContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px 20px;
+	margin-right: 50px;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 1;
+}
+
+.projectSkills {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skillTag {
+	border: solid white;
+	height: 40px;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+	.skillTag {
+		font-size: 1rem;
+		margin: 5px;
+		padding: 5px;
 	}
+}
 
-	@media only screen and (max-width: 450px) {
-		.skillTag {
-			display: none;
-		}
+.skillTag .p {
+	margin: auto;
+}
+
+@media only screen and (max-width: 1100px) {
+	.projectsContent {
+		margin-right: 0px;
+		grid-column-start: 1;
+		grid-column-end: 1;
+		grid-row-start: 1;
+		grid-row-end: 1;
 	}
+}
 
-	.skillTag .p {
+.ptIndented {
+	margin-left: 140px;
+}
+
+.projectsTemplate {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: white solid;
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: 5fr 1fr 1fr;
+
+}
+
+@media only screen and (max-width: 1100px) {
+	.projectsTemplate {
+		width: 100%;
 		margin: auto;
 	}
 
-	@media only screen and (max-width: 1100px) {
-		.projectsContent {
-			margin-right: 0px;
-			grid-column-start: 1;
-			grid-column-end: 1;
-			grid-row-start: 1;
-			grid-row-end: 1;
-		}
-	}
-
 	.ptIndented {
-		margin-left: 140px;
+		margin-left: 0px;
 	}
+}
 
+@media only screen and (max-width: 600px) {
 	.projectsTemplate {
-		margin-top: 20px;
-		margin-bottom: 20px;
-		border: white solid;
-		padding-left: 10px;
-		display: grid;
-		grid-template-columns: 5fr 1fr 1fr;
-
+		margin: 15px auto;
+		flex-wrap: wrap;
 	}
 
-	@media only screen and (max-width: 1100px) {
-		.projectsTemplate {
-			width: 100%;
-			margin: auto;
-		}
-
-		.ptIndented {
-			margin-left: 0px;
-		}
+	h2 {
+		font-size: 3rem;
 	}
 
-	@media only screen and (max-width: 600px) {
-		.projectsTemplate {
-			margin: 15px auto;
-		}
-	}
 
+}
+
+.projectsTemplate .whiteArrow {
+	height: auto;
+	width: 130px;
+	margin: auto auto;
+	padding: 10px 10px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
 	.projectsTemplate .whiteArrow {
-		height: auto;
-		width: 100px;
-		margin: auto auto;
-		padding: 10px 10px;
-		transition: 0.3s;
-		cursor: pointer;
+		width: 70px;
 	}
 
-	@media only screen and (max-width: 450px) {
-		.projectsTemplate .whiteArrow {
-			width: 70px;
-		}
+}
 
-	}
-
-	.projectsTemplate .whiteArrow:hover {
-		height: auto;
-		width: 120px;
-		margin: auto auto;
-		padding: 10px 10px;
-		transition: 0.3s;
-	}
+.projectsTemplate .whiteArrow:hover {
+	height: auto;
+	width: 145px;
+	margin: auto auto;
+	padding: 10px 10px;
+	transition: 0.3s;
+}
 
 
 
-	.arrowLink {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+.arrowLink {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-	}
+}
 
+.projectsTextBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 50px;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 650px) {
 	.projectsTextBox {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin-left: 50px;
+		margin-left: 0;
 	}
+}
 
-	@media only screen and (max-width: 650px) {
-		.projectsTextBox {
-			margin-left: 0;
-		}
-	}
+.contactDiv {
+	background-color: $darkBlue;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
 
+@media only screen and (max-width: 870px) {
 	.contactDiv {
-		background-color: $darkBlue;
-		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: 1fr;
 	}
+}
 
-	@media only screen and (max-width: 870px) {
-		.contactDiv {
-			grid-template-columns: 1fr;
-		}
-	}
+.contactImageDiv {
+	margin: auto auto;
+	margin-right: 50px;
+}
 
-	.contactImageDiv {
-		margin: auto auto;
-		margin-right: 50px;
-	}
+.contactImage {
+	height: auto;
+	width: 200px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
+@media only screen and (max-width: 870px) {
 	.contactImage {
-		height: auto;
-		width: 200px;
-		margin-top: 50px;
-		margin-bottom: 50px;
+		display: none;
 	}
+}
 
-	@media only screen and (max-width: 870px) {
-		.contactImage {
-			display: none;
-		}
+.contactContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: white;
+	margin-left: 150px;
+
+	h2 {
+		font-size: 5rem;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.contactContent {
+		margin-left: 0px;
+		padding: 10px 30px;
+	}
+}
+
+.contactIconsDiv {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.skillsIcon {
+	font-size: 6rem;
+	color: white;
+	text-align: center;
+
+}
+
+.skillsIcon:hover {
+	color: $darkBlue;
+	transition: 0.15s;
+}
+
+.skillsIcon:link {
+	text-decoration: none;
+}
+
+
+
+.footer {
+	background-color: white;
+	color: black;
+	margin: 20px 0px 20px 150px;
+}
+
+@media only screen and (max-width: 870px) {
+	.footer {
+		margin: 20px 0px 20px 40px;
+	}
+}
+
+.icon {
+	font-size: 100px;
+	color: white;
+	transition: 0.15s;
+	margin: 10px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+	.icon {
+		font-size: 60px;
 	}
 
 	.contactContent {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		color: white;
-		margin-left: 150px;
-
-		h2 {
-			font-size: 5rem;
-		}
-	}
-
-	@media only screen and (max-width: 870px) {
-		.contactContent {
-			margin-left: 0px;
-			padding: 10px 30px;
-		}
-	}
-
-	.contactIconsDiv {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 50px;
-	}
-
-	.skillsIcon {
-		font-size: 6rem;
-		color: white;
 		text-align: center;
-
 	}
+}
 
-	.skillsIcon:hover {
-		color: $darkBlue;
-		transition: 0.15s;
-	}
-
-	.skillsIcon:link {
-		text-decoration: none;
-	}
-
-
-
-	.footer {
-		background-color: white;
-		color: black;
-		margin: 20px 0px 20px 150px;
-	}
-
-	@media only screen and (max-width: 870px) {
-		.footer {
-			margin: 20px 0px 20px 40px;
-		}
-	}
-
+@media only screen and (max-width: 375px) {
 	.icon {
-		font-size: 100px;
-		color: white;
-		transition: 0.15s;
-		margin: 10px 10px;
+		font-size: 40px;
 	}
 
-	@media only screen and (max-width: 500px) {
-		.icon {
-			font-size: 60px;
-		}
-
-		.contactContent {
-			text-align: center;
-		}
+	.contactContent {
+		text-align: center;
 	}
+}
 
-	@media only screen and (max-width: 375px) {
-		.icon {
-			font-size: 40px;
-		}
+.icon:hover {
+	color: $brownRed;
+	transition: 0.15s;
+}
 
-		.contactContent {
-			text-align: center;
-		}
+@keyframes fadeInAnimation {
+	from {
+		opacity: 0;
 	}
-
-	.icon:hover {
-		color: $brownRed;
-		transition: 0.15s;
+	to {
+		opacity: 1;
 	}
+}
 
-	@keyframes fadeInAnimation {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-
-	.fadeIn {
-		animation: fadeInAnimation 2s;
-	}
+.fadeIn {
+	animation: fadeInAnimation 2s;
+}
 
 
 
