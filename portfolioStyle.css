@@ -30,7 +30,7 @@ p {
   font-style: italic;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .subtext {
     display: none;
   }
@@ -84,7 +84,7 @@ nav h2 {
   color: #b9451e;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1170px) {
   .navList li {
     display: none;
   }
@@ -178,26 +178,10 @@ header {
   color: #b9451e;
 }
 
-@media only screen and (max-width: 550px) {
-  .hamburgerList {
-    font-size: 2rem;
-    margin: auto;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .hamburgerList {
-    font-size: 2rem;
-    margin: auto;
-    padding-left: 20px;
-  }
-
-}
-
 .headerTextDiv {
   margin: auto 5% auto auto;
-  color: white;
-  border: white solid;
+  color: #2b4554;
+  border: solid white;
   padding: 0px 200px;
   text-align: center;
   grid-area: content;
@@ -206,6 +190,10 @@ header {
 @media only screen and (max-width: 1550px) {
   .headerTextDiv {
     padding: 0px 125px;
+  }
+
+  .aboutMeContent h2 {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 1230px) {
@@ -256,7 +244,6 @@ header {
     width: 680px;
   }
 }
-
 @media only screen and (max-width: 870px) {
   header {
     grid-template-areas: "content" "image";
@@ -278,14 +265,6 @@ header {
     margin-top: 100px;
   }
 }
-
-
-@media only screen and (max-width: 1150px) {
-  .headerImage {
-    width: 550px;
-  }
-}
-
 @media only screen and (max-width: 870px) {
   .headerImage {
     width: 500px;
@@ -310,8 +289,8 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "content image";
+  padding-top: 20px;
 }
-
 
 @media only screen and (max-width: 870px) {
   .aboutMeDiv {
@@ -335,15 +314,9 @@ header {
   width: 500px;
 }
 
-.headshotImage {
-  height: 360px;
-  width: 360px;
-  margin-right: 50px;
-}
-
 @media only screen and (max-width: 1200px) {
   .aboutMeImage {
-    width: 100%;
+    width: 200px;
   }
 }
 @media only screen and (max-width: 870px) {
@@ -359,17 +332,27 @@ header {
 @media only screen and (max-width: 375px) {
   .aboutMeImage {
     width: 200px;
-    margin-bottom: 20px;
   }
 
   .aboutMeDiv {
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 4fr 1fr;
   }
+}
+.headshotImage {
+  height: 360px;
+  width: 360px;
+  margin-right: 50px;
+}
 
+@media only screen and (max-width: 375px) {
   .headshotImage {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
+}
+.aboutMeInnerContent p {
+  text-align: left;
+  padding: 0 30px;
 }
 
 .aboutMeImageDiv {
@@ -383,18 +366,9 @@ header {
   grid-area: content;
 }
 
-.aboutMeContent h2 {
-  text-align: left;
-  padding-left: 75px;
-}
-
 @media only screen and (max-width: 1550px) {
   .aboutMeContent {
     padding: 60px 100px 60px 55px;
-  }
-
-  .aboutMeContent h2 {
-    padding-left: 225px;
   }
 
   .headshotImage {
@@ -403,18 +377,19 @@ header {
     margin: auto;
   }
 }
-.aboutMeInnerContent p {
-  text-align: center;
-  padding: 0 30px;
+.aboutMeInnerContent h2 {
+  text-align: left;
+  font-size: 5rem;
 }
 
+@media only screen and (max-width: 1550px) {
+  .aboutMeInnerContent h2 {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 870px) {
   .aboutMeContent {
     padding: 0 0;
-  }
-
-  .aboutMeContent h2 {
-    padding-left: 225px;
   }
 
   .aboutMeImageDiv {
@@ -427,7 +402,7 @@ header {
     justify-content: center;
   }
 
-  .aboutMeInnerContent p {
+  .aboutMeInnerContent p, h2 {
     margin: 10px 50px;
     padding: 0px 20px;
   }
@@ -452,7 +427,7 @@ header {
     flex-direction: column;
   }
 
-  .aboutMeInnerContent p {
+  .aboutMeInnerContent p, .aboutMeH2 {
     margin: 20px 0px;
     margin-left: 140px;
     text-align: center;
@@ -478,25 +453,15 @@ header {
     margin: auto;
   }
 
-  .aboutMeContent p {
+  .aboutMeContent p, .aboutMeH2 {
     margin: 20px auto;
   }
-
-  .aboutMeContent h2 {
-    padding-left: 0px;
-    text-align: center;
-  }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .headshotImage {
     margin: auto;
     width: 300px;
     height: 300px;
-  }
-
-  .aboutMeContent h2 {
-    padding-left: 0px;
-    text-align: center;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -507,8 +472,6 @@ header {
 
   .headshotImage {
     margin: auto;
-    height: 200px;
-    width: 200px;
   }
 }
 .skills {
@@ -576,7 +539,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1100px) {
   .projectsDiv {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 1fr;
@@ -599,26 +562,15 @@ header {
     margin-bottom: 20px;
   }
 }
-
-@media only screen and (max-width: 450px){
-  .projectsDiv {
-    grid-template-rows: 3fr 2fr;
-  }
-}
-
-@media only screen and (max-width: 350px){
-  .projectsDiv {
-    grid-template-rows: 3fr 1fr;
-  }
-}
-
-
 @media only screen and (max-width: 375px) {
   .projectsImage {
     width: 250px;
     margin-bottom: 20px;
   }
 
+  .projectsDiv {
+    grid-template-rows: 3fr 1fr;
+  }
 }
 .projectsImageDiv {
   margin: auto auto auto 20px;
@@ -627,7 +579,7 @@ header {
   grid-row-start: 1;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1100px) {
   .projectsImageDiv {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -635,7 +587,7 @@ header {
     grid-row-end: 2;
   }
 }
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1100px) {
   .projectsImageDiv {
     width: 100%;
     display: flex;
@@ -656,12 +608,11 @@ header {
 
 .projectSkills {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .skillTag {
   border: solid white;
-
+  height: 40px;
   margin: 10px;
   padding: 10px;
   font-size: 1.5rem;
@@ -671,7 +622,7 @@ header {
   text-align: center;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .skillTag {
     font-size: 1rem;
     margin: 5px;
@@ -680,16 +631,14 @@ header {
 }
 @media only screen and (max-width: 450px) {
   .skillTag {
-    font-size: 0.8rem;
-    margin: 5px;
-    padding: 3px;
+    display: none;
   }
 }
 .skillTag .p {
   margin: auto;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1100px) {
   .projectsContent {
     margin-right: 0px;
     grid-column-start: 1;
@@ -698,13 +647,6 @@ header {
     grid-row-end: 1;
   }
 }
-
-@media only screen and (max-width: 450px) {
-  .projectsContent {
-    justify-content: normal;
-  }
-}
-
 .ptIndented {
   margin-left: 140px;
 }
@@ -715,10 +657,10 @@ header {
   border: white solid;
   padding-left: 10px;
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+  grid-template-columns: 5fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1100px) {
   .projectsTemplate {
     width: 100%;
     margin: auto;
@@ -732,91 +674,33 @@ header {
   .projectsTemplate {
     margin: 15px auto;
   }
-
-  .projectsTemplate {
-    grid-template-columns: 3fr 1fr 1fr;
-  }
 }
 .projectsTemplate .whiteArrow {
   height: auto;
-  width: 170px;
+  width: 100px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
-
+@media only screen and (max-width: 450px) {
+  .projectsTemplate .whiteArrow {
+    width: 70px;
+  }
+}
 .projectsTemplate .whiteArrow:hover {
   height: auto;
-  width: 190px;
+  width: 120px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
 }
 
-.liveTag {
-  min-width: 200px;
-}
-
-@media only screen and (max-width: 650px) {
-  .liveTag {
-    min-width: 100px;
-  }
-
-  .projectsTemplate {
-    grid-template-columns: 2fr 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 1350px) {
-
-  .projectsTemplate .whiteArrow {
-    width: 140px;
-  }
-
-  .projectsTemplate .whiteArrow:hover {
-    width: 160px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .projectsTemplate .whiteArrow {
-    width: 120px;
-  }
-
-  .projectsTemplate .whiteArrow:hover {
-    width: 140px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .projectsTemplate .whiteArrow {
-    width: 100px;
-  }
-
-  .projectsTemplate .whiteArrow:hover {
-    width: 90px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .projectsTemplate .whiteArrow {
-    width: 90px;
-
-  }
-
-  .projectsTemplate .whiteArrow:hover {
-    width: 100px;
-  }
-}
-
-
 .arrowLink {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .projectsTextBox {
@@ -826,26 +710,11 @@ header {
   margin-left: 50px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
   .projectsTextBox {
     margin-left: 0;
   }
 }
-
-@media only screen and (max-width: 450px) {
-  .projectsTextBox {
-    margin-left: 0;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-}
-
 .contactDiv {
   background-color: #2b4554;
   display: grid;
@@ -881,6 +750,9 @@ header {
   color: white;
   margin-left: 150px;
 }
+.contactContent h2 {
+  font-size: 5rem;
+}
 
 @media only screen and (max-width: 870px) {
   .contactContent {
@@ -907,12 +779,6 @@ header {
 
 .skillsIcon:link {
   text-decoration: none;
-}
-
-@media only screen and (max-width: 450px) {
-  .skillsIcon {
-    font-size: 4rem;
-  }
 }
 
 .footer {
