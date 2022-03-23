@@ -335,6 +335,12 @@ header {
   width: 500px;
 }
 
+.headshotImage {
+  height: 360px;
+  width: 360px;
+  margin-right: 50px;
+}
+
 @media only screen and (max-width: 1200px) {
   .aboutMeImage {
     width: 100%;
@@ -353,24 +359,19 @@ header {
 @media only screen and (max-width: 375px) {
   .aboutMeImage {
     width: 200px;
+    margin-bottom: 20px;
   }
 
   .aboutMeDiv {
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: 3fr 1fr;
   }
-}
-.headshotImage {
-  height: 360px;
-  width: 360px;
-  margin-right: 50px;
-}
 
-@media only screen and (max-width: 375px) {
   .headshotImage {
     width: 180px;
     height: 180px;
   }
 }
+
 .aboutMeImageDiv {
   margin: auto 20px;
   grid-area: image;
@@ -801,12 +802,12 @@ header {
 
 @media only screen and (max-width: 400px) {
   .projectsTemplate .whiteArrow {
-    width: 70px;
+    width: 90px;
 
   }
 
   .projectsTemplate .whiteArrow:hover {
-    width: 80px;
+    width: 100px;
   }
 }
 
