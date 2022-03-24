@@ -30,6 +30,11 @@ p {
 	font-size: 2rem;
 }
 
+.homeButton:link, .homeButton:visited, .homeButton:active {
+	color: $darkBlue;
+	text-decoration: none;
+}
+
 .subtext {
 	font-size: 2rem;
 	font-style: italic;
@@ -152,19 +157,64 @@ nav h2 {
 	}
 }
 
+
 header {
 	background-color: $cream;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	grid-template-areas: "image content";
 	height: 800px;
+}
 
+.headerInfoDiv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.buttonMargin {
+	margin-right: 5%;
+
+	a:link, a:visited {
+		text-decoration: none;
+	}
+}
+
+
+
+.viewMoreButton {
+
+	width: 20%;
+	min-width: 160px;
+	border: solid white;
+	color: $darkBlue;
+	display: flex;
+	margin: 20px auto;
+	padding: 15px 10px;
+	transition: 0.2s;
+	background-color: rgba(255,255,255,0);
+
+	h4 {
+		font-size: 2rem;
+		color: $darkBlue;
+		margin: auto;
+		text-align: center;
+
+	}
+
+	&:hover {
+		transition: 0.2s;
+		font-size: 3rem;
+		background-color: rgba(255,255,255,0.6);
+		cursor: pointer;
+		transform: scale(1.075);
+	}
 }
 
 .expandedMenu {
 	background-color: white;
 	height: 40vh;
-	width: 40vw;
+	width: 50vw;
 	display: none;
 	position: fixed;
 
@@ -205,7 +255,7 @@ header {
 
 @media only screen and (max-width: 550px){
 	.hamburgerList {
-		padding-left: 10px;
+		padding-left: 20px;
 		padding-top: 30px;
 	}
 
@@ -216,7 +266,7 @@ header {
 }
 
 .headerTextDiv {
-	margin: auto 5% auto auto;
+	margin: 0 5% 0 auto;
 	color: $darkBlue;
 	border: solid white;
 	padding: 0px 200px;
@@ -290,7 +340,7 @@ header {
 		header {
 		grid-template-areas: "content" "image";
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 2fr;
+		grid-template-rows: 1fr 1.5fr;
 		height: auto;
 	}
 	
@@ -308,7 +358,7 @@ header {
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 55px) {
 	header {
 		grid-template-rows: 1fr 1fr;
 	}
@@ -324,14 +374,18 @@ header {
 	.headerImage {
 			width: 370px;
 		}
+
+	header {
+		grid-template-rows: 1fr 1fr;
 	}
+}
 	
 @media only screen and (max-width: 375px) {
 	.headerImage {
 			width: 280px;
 		}
 		header {
-			grid-template-rows: 1fr 1fr;
+			grid-template-rows: 1fr 0.75fr;
 		}
 	}	
 
@@ -395,8 +449,8 @@ header {
 }
 
 .headshotImage {
-	height: 360px;
-	width: 360px;
+	height: 380px;
+	width: 380px;
 	margin-right: 50px;
 }
 
@@ -432,7 +486,7 @@ header {
 
 .aboutMeInnerContent h2 {
 	text-align: left;
-	font-size: 5rem;
+	font-size: 6rem;
 }
 
 @media only screen and (max-width: 1550px)  {
@@ -530,8 +584,8 @@ header {
 
 	.headshotImage {
 		margin: auto;
-		width: 300px;
-		height: 300px;
+		width: 350px;
+		height: 350px;
 	}
 
 }
@@ -544,8 +598,8 @@ header {
 
 	.headshotImage {
 		margin: auto;
-		width: 200px;
-		height: 200px;
+		width: 300px;
+		height: 300px;
 	}
 }
 
@@ -617,6 +671,20 @@ header {
 		grid-template-columns: 1fr 1fr 1fr;
 
 	}
+
+.projectsHeader {
+	background-color: $greyBlue;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+
+
+	h2 {
+		font-size: 6rem;
+		text-align: center;
+		margin: 20px;
+	}
+}
 
 @media only screen and (max-width: 1100px) {
 	.projectsDiv {
@@ -854,7 +922,7 @@ header {
 	margin-left: 150px;
 
 	h2 {
-		font-size: 5rem;
+		font-size: 6rem;
 	}
 }
 
@@ -875,7 +943,6 @@ header {
 	font-size: 6rem;
 	color: white;
 	text-align: center;
-
 }
 
 .skillsIcon:hover {
@@ -886,8 +953,6 @@ header {
 .skillsIcon:link {
 	text-decoration: none;
 }
-
-
 
 .footer {
 	background-color: white;
