@@ -20,4 +20,5 @@ bin-release/
 .DS_Store
 .idea/
 Images/.DS_Store
-
+portfolioStyle.scss
+portfolioStyle.css.map
