@@ -593,8 +593,6 @@ header {
 
 .projectsDiv {
   background-color: #d9dee4;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .projectsHeader {
@@ -670,7 +668,6 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 20px;
-  margin-right: 50px;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -681,8 +678,24 @@ header {
   flex-wrap: wrap;
 }
 
+.toolTag {
+  border: solid #2b4554;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
 .skillTag {
   border: solid white;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 40px;
   margin: 10px;
   padding: 10px;
@@ -695,13 +708,13 @@ header {
 }
 
 @media only screen and (max-width: 650px) {
-  .skillTag {
+  .toolTag, .skillTag {
     font-size: 1rem;
     margin: 5px;
     padding: 5px;
   }
 }
-.skillTag .p {
+.toolTag .p, .skillTag .p {
   margin: auto;
 }
 
@@ -714,33 +727,49 @@ header {
     grid-row-end: 1;
   }
 }
-.ptIndented {
-  margin-left: 140px;
+.projectsScreenShot {
+  height: 300px;
+  width: auto;
+  margin: auto;
+  padding: 15px;
 }
 
+@media only screen and (max-width: 700px) {
+  .projectsScreenShot {
+    display: none;
+  }
+}
+.projectDescription {
+  max-width: 700px;
+}
+
+@media only screen and (max-width: 950px) {
+  .projectDescription {
+    display: none;
+  }
+}
 .projectsTemplate {
   margin-top: 20px;
   margin-bottom: 20px;
   border: white solid;
-  padding-left: 10px;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-columns: 2fr 5fr 1fr 1fr;
 }
 
 @media only screen and (max-width: 1100px) {
   .projectsTemplate {
     width: 100%;
-    margin: auto;
   }
 
   .ptIndented {
     margin-left: 0px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .projectsTemplate {
-    margin: 15px auto;
     flex-wrap: wrap;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 10px;
   }
 
   h2 {
@@ -749,24 +778,42 @@ header {
 }
 .projectsTemplate .whiteArrow {
   height: auto;
-  width: 130px;
+  width: 180px;
   margin: auto auto;
   padding: 10px 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
+.projectsTemplate .whiteArrow:hover {
+  height: auto;
+  width: 200px;
+  margin: auto auto;
+  padding: 10px 10px;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 1100px) {
+  .projectsTemplate .whiteArrow {
+    width: 100px;
+  }
+
+  .projectsTemplate .whiteArrow:hover {
+    width: 120px;
+  }
+
+  .projectsTemplate .skillsIcon {
+    font-size: 6rem;
+  }
+}
 @media only screen and (max-width: 450px) {
   .projectsTemplate .whiteArrow {
     width: 70px;
   }
 }
-.projectsTemplate .whiteArrow:hover {
-  height: auto;
-  width: 145px;
-  margin: auto auto;
-  padding: 10px 10px;
-  transition: 0.3s;
+.tagMargin {
+  margin: 40px 10px;
+  min-width: 60px;
 }
 
 .arrowLink {
@@ -840,7 +887,7 @@ header {
 }
 
 .skillsIcon {
-  font-size: 6rem;
+  font-size: 8rem;
   color: white;
   text-align: center;
 }
