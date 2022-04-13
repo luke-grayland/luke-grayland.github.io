@@ -85,6 +85,7 @@ nav h2 {
 .menuIcon i {
   color: #2b4554;
 }
+
 .menuIcon i:hover {
   color: #b9451e;
 }
@@ -115,23 +116,28 @@ nav h2 {
   margin-right: 30px;
   margin-left: 30px;
 }
+
 .navList li:link {
   color: #2b4554;
   text-decoration: none;
   transition: 0.25s;
 }
+
 .navList li a:-webkit-any-link {
   color: #2b4554;
   cursor: pointer;
   text-decoration: none;
 }
+
 .navList li a:-webkit-any-link:hover {
   color: #b9451e;
 }
+
 .navList li:visited {
   color: #2b4554;
   transition: 0.25s;
 }
+
 .navList li:hover {
   color: #b9451e;
   transition: 0.2s;
@@ -154,6 +160,7 @@ header {
 .buttonMargin {
   margin-right: 5%;
 }
+
 .buttonMargin a:link, .buttonMargin a:visited {
   text-decoration: none;
 }
@@ -169,12 +176,14 @@ header {
   transition: 0.2s;
   background-color: rgba(255, 255, 255, 0);
 }
+
 .viewMoreButton h4 {
   font-size: 2rem;
   color: #2b4554;
   margin: auto;
   text-align: center;
 }
+
 .viewMoreButton:hover {
   transition: 0.2s;
   font-size: 3rem;
@@ -206,6 +215,7 @@ header {
   height: 100%;
   margin: 5px 0px 5px 5px;
 }
+
 .hamburgerList a:link {
   text-decoration: none;
   color: #2b4554;
@@ -348,10 +358,9 @@ header {
 }
 .aboutMeDiv {
   background-color: #2b4554;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-template-areas: "content image";
   padding-top: 20px;
+  display: flex;
 }
 
 @media only screen and (max-width: 870px) {
@@ -401,9 +410,24 @@ header {
   }
 }
 .headshotImage {
-  height: 380px;
-  width: 380px;
-  margin-right: 50px;
+  height: auto;
+  width: 20%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1600px) {
+  .headshotImage {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .headshotImage {
+    width: 50%;
+  }
+}
+.aboutMeInnerContent {
+  width: 50%;
+  display: block;
 }
 
 .aboutMeInnerContent p {
@@ -418,36 +442,31 @@ header {
 
 .aboutMeContent {
   color: white;
-  padding: 120px 50px 120px 205px;
+  padding: 100px 50px 100px 205px;
   grid-area: content;
+  display: flex;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1100px) {
   .aboutMeContent {
-    padding: 60px 100px 60px 55px;
+    flex-direction: column;
   }
 
-  .headshotImage {
-    width: 350px;
-    height: 350px;
+  .aboutMeContent {
+    padding: 50px;
+  }
+
+  .aboutMeInnerContent {
+    width: 80%;
     margin: auto;
   }
 }
 .aboutMeInnerContent h2 {
-  text-align: left;
   font-size: 6rem;
 }
 
-@media only screen and (max-width: 1550px) {
-  .aboutMeInnerContent h2 {
-    text-align: center;
-  }
-}
 @media only screen and (max-width: 870px) {
-  .aboutMeContent {
-    padding: 0 0;
-  }
-
   .aboutMeImageDiv {
     display: flex;
     justify-content: center;
@@ -457,20 +476,7 @@ header {
     display: flex;
     justify-content: center;
   }
-
-  .aboutMeInnerContent p, aboutMeH2 {
-    margin: 10px 50px;
-    padding: 0px 20px;
-  }
-
-  .headshotImage {
-    margin: auto auto;
-  }
 }
-.aboutMeInnerContent {
-  display: flex;
-}
-
 .aboutMeInnerContent p {
   margin: auto;
   font-size: 2.2rem;
@@ -485,51 +491,12 @@ header {
 
   .aboutMeInnerContent p, .aboutMeH2 {
     margin: 20px 0px;
-    margin-left: 140px;
-    text-align: center;
-    width: 350px;
-  }
-
-  .headshotImage {
-    margin: 0px 0px 0px 140px;
-  }
-}
-@media only screen and (max-width: 1100px) {
-  .aboutMeInnerContent p {
-    width: 350px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .aboutMeInnerContent p {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 870px) {
-  .headshotImage {
-    margin: auto;
-  }
-
-  .aboutMeContent p, .aboutMeH2 {
-    margin: 20px auto;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .headshotImage {
-    margin: auto;
-    width: 350px;
-    height: 350px;
   }
 }
 @media only screen and (max-width: 500px) {
   .aboutMeInnerContent p {
     margin: 20px auto;
     font-size: 2rem;
-  }
-
-  .headshotImage {
-    margin: auto;
-    width: 300px;
-    height: 300px;
   }
 }
 .skills {
@@ -601,6 +568,7 @@ header {
   justify-content: center;
   margin: auto;
 }
+
 .projectsHeader h2 {
   font-size: 6rem;
   text-align: center;
@@ -870,6 +838,7 @@ header {
   color: white;
   margin-left: 150px;
 }
+
 .contactContent h2 {
   font-size: 6rem;
 }
@@ -953,5 +922,7 @@ header {
 .fadeIn {
   animation: fadeInAnimation 2s;
 }
+
+/*# sourceMappingURL=portfolioStyle.css.map */
 
 /*# sourceMappingURL=portfolioStyle.css.map */
